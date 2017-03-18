@@ -1,0 +1,183 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:fillViewport="true"
+    android:background="@drawable/background"
+    android:orientation = "vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:text="SMS Blast"
+            android:background="@drawable/textview"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView2"
+            android:textColor="#4F2F4F"
+            android:textSize="36sp"
+            android:textStyle="normal|bold|italic"
+            android:textAllCaps="true"
+            android:textAlignment="center" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/textview"
+            android:layout_marginTop="0dp"
+            android:weightSum="1">
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/edittext"
+                android:inputType="number"
+                android:layout_weight="0.38"
+                android:ems="10"
+                android:maxLength="17"
+                android:layout_marginTop="35dp"
+                android:layout_marginLeft="15dp"
+                android:textStyle="bold"
+                android:textAlignment="center"
+                android:id="@+id/contact_ET"
+                style="@style/Base.TextAppearance.AppCompat.Medium"
+                android:hint="Enter Number"
+                android:layout_marginRight="22dp" />
+            <Button
+                android:text="Contacts"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.62"
+                android:layout_marginTop="33dp"
+                android:layout_marginRight="26dp"
+                android:layout_marginLeft="25dp"
+                android:layout_marginBottom="5dp"
+                android:background="@drawable/button_border"
+                android:id="@+id/contacts_btn" />
+        </LinearLayout>
+
+        <TextView
+            android:text="Message"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView"
+            android:gravity="center"
+            android:background="@drawable/textview"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:textColor="#3B4990"
+            android:textSize="24sp"
+            android:layout_marginTop="15dp"
+            android:textStyle="normal|bold|italic" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textMultiLine"
+            android:ems="10"
+            android:maxLines="10"
+            android:minLines="3"
+            android:gravity="center"
+            android:background="@drawable/edittext"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:id="@+id/messageET"
+            android:hint="Message" />
+
+        <TextView
+            android:text="Number of Times : 0"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/textview"
+            android:gravity="center"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:id="@+id/number_of_times_TV"
+            android:textStyle="normal|bold"
+            android:layout_marginTop="15dp"
+            android:textColor="#3B4990"
+            android:textSize="18sp" />
+
+        <SeekBar
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginRight="25dp"
+            android:id="@+id/repetitionBar"
+            android:max="100" />
+
+        <TextView
+            android:text="Delay (Seconds) : 0"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/delay_TV"
+            android:layout_marginLeft="5dp"
+            android:textColor="#3B4990"
+            android:layout_marginRight="5dp"
+            android:background="@drawable/textview"
+            android:gravity="center"
+            android:layout_marginTop="15dp"
+            android:textSize="18sp"
+            android:textStyle="normal|bold" />
+
+        <SeekBar
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/dealyBar"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginRight="25dp"
+            android:max="10" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="50dp"
+            android:orientation="horizontal"
+            android:layout_marginRight="5dp"
+            android:layout_marginLeft="5dp"
+            android:layout_weight="1">
+
+            <Button
+                android:text="Blast"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/button_border"
+                android:id="@+id/funkBtn"
+                android:textStyle="normal|bold"
+                android:layout_marginRight="5dp"
+                android:layout_marginLeft="5dp"
+                android:textColor="#3333FF"
+                android:textSize="18sp"
+                android:layout_weight="0.5"/>
+
+            <Button
+                android:text="Back"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/cancelBtn"
+                android:textSize="18sp"
+                android:textColor="#3333FF"
+                android:background="@drawable/button_border"
+                android:layout_marginRight="5dp"
+                android:layout_marginLeft="5dp"
+                android:textStyle="normal|bold"
+                android:layout_weight="0.5"/>
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:text="© Powered by Funky Master"
+            android:textStyle="bold"
+            android:textColor="#C82536"/>
+
+    </LinearLayout>
+    </ScrollView>
+

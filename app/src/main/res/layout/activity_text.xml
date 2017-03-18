@@ -1,0 +1,192 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:fillViewport="true"
+    xmlns:ads="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/background"
+    android:orientation = "vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:text="Text Blast"
+            android:background="@drawable/textview"
+            android:textColor="#4F2F4F"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView2"
+            android:textSize="36sp"
+            android:textStyle="normal|bold|italic"
+            android:textAllCaps="true"
+            android:textAlignment="center" />
+
+
+        <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:textSize="28sp"
+                  android:textColor="#3B4990"
+                android:layout_marginLeft="5dp"
+                 android:layout_marginRight="5dp"
+                android:background="@drawable/textview"
+                android:layout_marginTop="0dp"
+                android:textStyle="normal|bold"
+                android:text="Input Text"/>
+
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textMultiLine"
+            android:ems="10"
+            android:maxLines="4"
+            android:minLines="2"
+            android:gravity="center"
+            android:background="@drawable/edittext"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:id="@+id/textET"
+            android:hint="Text" />
+
+        <TextView
+            android:text="Repeat Text : 0"
+            android:layout_width="match_parent"
+            android:gravity="center"
+            android:background="@drawable/textview"
+            android:layout_height="wrap_content"
+            android:id="@+id/repeat_text_TV"
+            android:layout_marginLeft="5dp"
+            android:textColor="#3B4990"
+            android:layout_marginRight="5dp"
+            android:textStyle="normal|bold"
+            android:layout_marginTop="15dp"
+            android:textSize="25dp" />
+
+        <SeekBar
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="5dp"
+            android:max="1000"
+            android:layout_marginRight="5dp"
+            android:id="@+id/repet_bar" />
+
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="25dp"
+            android:gravity="center"
+            android:weightSum="4">
+
+            <RadioButton
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Whatsapp"
+                android:layout_weight="1"
+                android:textStyle="bold"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/textview"
+                android:id="@+id/whatsapp_radio" />
+
+
+            <RadioButton
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Messenger"
+                android:layout_weight="0.9"
+                android:background="@drawable/textview"
+                android:layout_marginTop="5dp"
+                android:textStyle="bold"
+                android:id="@+id/messenger_radio" />
+
+                <RadioButton
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Google +"
+                    android:background="@drawable/textview"
+                    android:layout_marginTop="5dp"
+                    android:layout_weight="1"
+                    android:textStyle="bold"
+                    android:id="@+id/google_radio" />
+
+
+                <RadioButton
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Twitter"
+                    android:background="@drawable/textview"
+                    android:layout_weight="0.9"
+                    android:layout_marginTop="5dp"
+                    android:textStyle="bold"
+                    android:id="@+id/twitter_radio" />
+
+        </RadioGroup>
+
+        <com.google.android.gms.ads.AdView
+            android:id="@+id/activity_text_adView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_centerHorizontal="true"
+            android:layout_alignParentBottom="true"
+            ads:adSize="BANNER"
+            ads:adUnitId="@string/banner_ad_unit_id">
+        </com.google.android.gms.ads.AdView>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal"
+            android:layout_marginRight="5dp"
+            android:layout_marginLeft="5dp"
+            android:layout_weight="1">
+
+            <Button
+                android:text="Blast"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/button_border"
+                android:id="@+id/funk_text_Btn"
+                android:textStyle="normal|bold"
+                android:textColor="#3333FF"
+                android:layout_marginRight="5dp"
+                android:layout_marginLeft="5dp"
+                android:textSize="18sp"
+                android:layout_weight="0.5"/>
+
+            <Button
+                android:text="Back"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/cancel_text_Btn"
+                android:textSize="18sp"
+                android:layout_marginRight="5dp"
+                android:layout_marginLeft="5dp"
+                android:background="@drawable/button_border"
+                android:textColor="#3333FF"
+                android:textStyle="normal|bold"
+                android:layout_weight="0.5"/>
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:text="© Powered by Funky Master"
+            android:textStyle="bold"
+            android:textColor="#C82536"/>
+
+    </LinearLayout>
+
+</ScrollView>
